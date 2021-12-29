@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: sample_python
+  namespace: name_space
+spec:
+  selector:
+    app: python_helloworld
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
